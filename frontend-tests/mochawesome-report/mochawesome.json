@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-04T10:42:29.320Z",
+    "end": "2021-11-04T10:42:51.336Z",
+    "duration": 22016,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cd710e8f-5778-4db5-a680-a5e77501e429",
+      "title": "",
+      "fullFile": "cypress/integration/functions-testing.js",
+      "file": "cypress/integration/functions-testing.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e307d35e-733b-4fcc-878f-d18ce6649be2",
+          "title": "Tests basic functionality of dashboard and linked pages",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Links from dashboard",
+              "fullTitle": "Tests basic functionality of dashboard and linked pages Links from dashboard",
+              "timedOut": null,
+              "duration": 5048,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dashboard.viewRooms();\ndashboard.backToDashboard();\ndashboard.viewClients();\ndashboard.backToDashboard();\ndashboard.viewBills();\ndashboard.backToDashboard();\ndashboard.viewReservations();\ndashboard.backToDashboard();",
+              "err": {},
+              "uuid": "6914adae-78f8-4261-aae7-44e8fa18ee8c",
+              "parentUUID": "e307d35e-733b-4fcc-878f-d18ce6649be2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create a new room",
+              "fullTitle": "Tests basic functionality of dashboard and linked pages Create a new room",
+              "timedOut": null,
+              "duration": 4921,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let category = 0;\nlet roomNumber = 301;\nlet floor = 3;\nlet available = true;\nlet price = 999;\nlet features = [0, 2];\ndashboard.viewRooms();\nrooms.createNew(category, roomNumber, floor, available, price, features);\ncy.contains('.card', roomNumber);\ndashboard.backToDashboard();",
+              "err": {},
+              "uuid": "4b71f956-d254-4c85-9602-25c4f327279c",
+              "parentUUID": "e307d35e-733b-4fcc-878f-d18ce6649be2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new client",
+              "fullTitle": "Tests basic functionality of dashboard and linked pages Creates a new client",
+              "timedOut": null,
+              "duration": 4002,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let name = 'Tester Client';\nlet email = 'tester@client.com';\nlet tel = '070-111 22 33';\ndashboard.viewClients();\nclients.createNew(name, email, tel);\ncy.contains('.card', name);\ndashboard.backToDashboard();",
+              "err": {},
+              "uuid": "58433f48-5563-4799-9b49-cffadda28491",
+              "parentUUID": "e307d35e-733b-4fcc-878f-d18ce6649be2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new bill",
+              "fullTitle": "Tests basic functionality of dashboard and linked pages Creates a new bill",
+              "timedOut": null,
+              "duration": 2943,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let value = 999;\nlet paid = false;\ndashboard.viewBills();\nbills.createNew(value, paid);\ncy.contains('.card', value);\ndashboard.backToDashboard();",
+              "err": {},
+              "uuid": "90078348-bc2a-44f1-af83-cf0b6c520fe6",
+              "parentUUID": "e307d35e-733b-4fcc-878f-d18ce6649be2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Creates a new reservation",
+              "fullTitle": "Tests basic functionality of dashboard and linked pages Creates a new reservation",
+              "timedOut": null,
+              "duration": 4044,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let start = '2021-11-01';\nlet end = '2021-11-02';\nlet client = 2;\nlet room = 2;\nlet bill = 1;\ndashboard.viewReservations();\nreservations.createNew(start, end, client, room, bill);\ncy.contains('.card', start, end);\ndashboard.backToDashboard();",
+              "err": {},
+              "uuid": "e6ef8111-175d-4bf8-a63d-5cd7f7d57009",
+              "parentUUID": "e307d35e-733b-4fcc-878f-d18ce6649be2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6914adae-78f8-4261-aae7-44e8fa18ee8c",
+            "4b71f956-d254-4c85-9602-25c4f327279c",
+            "58433f48-5563-4799-9b49-cffadda28491",
+            "90078348-bc2a-44f1-af83-cf0b6c520fe6",
+            "e6ef8111-175d-4bf8-a63d-5cd7f7d57009"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20958,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
