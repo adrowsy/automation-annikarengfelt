@@ -7,3 +7,4 @@ frontend-tests/mochawesome-report/assets/
 frontend-tests/cypress/videos/
 frontend-tests/cypress/videos/functions-testing.js.mp4
 rasi10-hotel-test-vue
+.vscode/

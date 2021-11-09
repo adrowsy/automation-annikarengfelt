@@ -18,3 +18,9 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+// ***********************************************************
+// Additional configurations
+// ***********************************************************
+// Import percy.io for visual regression testing with cypress
+import '@percy/cypress'
