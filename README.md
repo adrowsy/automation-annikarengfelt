@@ -1,32 +1,45 @@
-# automation-annikarengfelt
+# Get started
 
 Clone repo to your local machine
 
 ## Setup Tester Hotel
 Open rasi10-hotel-test-vue in terminal and command
-```
-npm run install
-npm run build
-```
-This will create directories 'node_modules' and 'dist' so that you can run the application using the command
-```
-npm run start
-```
-If the application starts successfully, the terminal will clear and you'll be able to access the app via localhost url
-### Trouble?
-Hotel tester app needs to be run on nvm 12. If the app doesn't install or build properly, use these commands:
+
+The app is build on earlier versions, use workarounds
 ```
 nvm use 12
 npm update
+```
+
+Install and build app
+```
+npm install
+npm run build
+```
+Expected result: Directories 'node_modules' and 'dist' are created
+
+Run the application using the command
+```
+npm run start
+```
+Expected result: Terminal clears and show
+```
+TESTER HOTEL
+Running on http://localhost:3000
+```
+
+### Trouble?
+Try this
+```
 npm cache clean --force
 ```
 
 ## Setup cypress
-Open  frontend-tests/cypress in terminal and command
+Open  frontend-tests in terminal and command
 ```
-npm init -y
 npm install cypress --save-dev
 ```
+Expected result: Directory 'node_modules' are created
 
 ## Run cypress
 Using prepared scripts in the package.json-file
@@ -36,7 +49,7 @@ Run cypress via browser
 npm run cypress:open
 ```
 
-Run cypress headless
+Run cypress headless with mochawesome reporter
 ```
 npm run cypress:run
 ```
