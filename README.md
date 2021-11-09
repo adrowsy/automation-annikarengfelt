@@ -3,6 +3,7 @@
 Clone repo to your local machine
 
 ## Setup Tester Hotel
+Clone https://github.com/rasi10/rasi10-hotel-test-vue.git repo and place it in the project directory
 Open rasi10-hotel-test-vue in terminal and command
 
 The app is build on earlier versions, use workarounds

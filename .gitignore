@@ -1,7 +1,7 @@
 frontend-tests/node_modules/
 frontend-tests/cypress/integration/junk/
-frontend-tests/cypress/videos
 rasi10-hotel-test-vue/node_modules/
 notes/
 junk-tests/
 frontend-tests/mochawesome-report/assets/
+frontend-tests/cypress/videos/
